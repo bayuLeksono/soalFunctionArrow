@@ -2,7 +2,7 @@
 discount = (price) => {
   const disc = 20 / 100
   const minDisc = 100000
-  let result
+  let result = ''
 
   if (price >= minDisc) {
     let priceToPay = (price - price * disc).toFixed(2)
@@ -55,11 +55,13 @@ let checkFirstAndLastLetter = console.log(
 
 // 4. perulangan
 repetition = (input, times) => input.repeat(times)
-console.log(repetition('Wakwaw', 3))
+let checkRepeat = repetition('Wakwaw', 3)
+console.log(checkRepeat)
 
 // 5. random number
 generateRandomNumber = () => {
   let generate = Math.floor(Math.random() * (6 - 1)) + 1
   return generate
 }
-console.log(generateRandomNumber())
+let checkGenerate = generateRandomNumber()
+console.log(checkGenerate)
